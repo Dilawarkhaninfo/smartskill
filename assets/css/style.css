@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #264790;
+    --main-text-color: #264790;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #0E1846;
+    --dark-grey: #718c9e;
+    --light-grey: #95acbc;
+    --color-light-blue: #0E1846;
+    --color-blue: #32cdfd !important;
+    --color-purples: #880656;
+    --color-black: #1f1e1e;
+    --dark-grey: #3f3f3f;
+    --primary: #264790;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.lead {
+    font-size: 16px !important;
+}
+
+.cust_height {
+    min-height: 80vh !important;
+}
+
+.cust_height2 {
+    min-height: 70vh !important;
+}
+
+/* buttons css start from here  */
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+
+/* buttons css end here  */
+
+
+/* text color css start from here  */
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+
+/* text color css end here  */
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+/* background css start from here  */
+
+.bg-grey {
+    background-color: #f2f2f2 !important;
+}
+
+.bg-red {
+    background-color: var(--color-red);
+}
+
+.bg-blue {
+    background-color: var(--color-blue);
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+
+/* border css start from here  */
+
+
+/* border css end here  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* header css  start from here  */
+
+
+/* Sidebar css  start from here  */
+
+.primary-text {
+    color: var(--main-text-color);
+}
+
+.second-text {
+    color: var(--second-text-color);
+}
+
+.primary-bg {
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+    background-color: var(--second-bg-color);
+}
+
+.danger-text {
+    color: var(--second-bg-color);
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #bad3f3, #c2e7f5, #cbddf7, #d4e5f8, #dddffa);
+}
+
+.third-bg {
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #bad3f3, #c2e7f5, #cbddf7, #d4e5f8, #dddffa);
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+    .img-login {
+        border-bottom: none !important;
+    }
+
+    .logo-img {
+        width: 160px;
+        height: 60px;
+    }
+}
+
+.img-login {
+    border-bottom: 1px solid var(--main-bg-color);
+}
+
+.img-login img {
+    width: 500px;
+}
